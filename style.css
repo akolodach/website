@@ -179,7 +179,7 @@ button:focus-visible,
   width: 100%;
 }
 
-/* Секція проєктів */
+
 .section-title {
   text-align: center;
   font-size: 1.45rem;
@@ -193,7 +193,7 @@ button:focus-visible,
   gap: 24px;
 }
 
-/* Картка проєкту + анімація наведення */
+
 .project-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-subtle);
@@ -295,7 +295,7 @@ button:focus-visible,
   transform: translateX(4px);
 }
 
-/* Кнопки фільтрації знизу під проєктами */
+
 .filter-controls {
   margin-top: 36px;
   display: flex;
@@ -326,7 +326,7 @@ button:focus-visible,
   color: #FFFFFF;
 }
 
-/* Футер */
+
 .site-footer {
   margin-top: 64px;
   padding-top: 24px;
@@ -368,7 +368,7 @@ button:focus-visible,
   font-weight: 500;
 }
 
-/* Модальні вікна */
+
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -515,7 +515,7 @@ button:focus-visible,
   text-decoration: underline;
 }
 
-/* Адаптивність */
+
 @media (max-width: 960px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);

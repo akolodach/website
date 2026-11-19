@@ -12,7 +12,6 @@
 <body>
 
   <div class="page-wrapper">
-    <!-- Навігація (точно як у Figma) -->
     <header class="site-header">
       <nav aria-label="Головна навігація">
         <ul class="nav-list">
@@ -24,7 +23,6 @@
     </header>
 
     <main>
-      <!-- Hero-банер на всю ширину екрана -->
       <section class="hero-section" aria-label="Вітальний банер">
         <div class="hero-banner">
           <img src="images/Rectangle 72.png" alt="Авторський скетч з катером та ілюстраціями" class="hero-sketch-img" onerror="this.style.display='none'">
@@ -34,15 +32,10 @@
           </div>
         </div>
       </section>
-
-      <!-- Секція проєктів -->
       <section id="projects" class="projects-section" aria-labelledby="projects-heading">
         <h2 id="projects-heading" class="section-title">Projects</h2>
 
-        <!-- Сітка карток (4 в ряд на ПК) -->
         <div class="projects-grid" id="projects-grid">
-          
-          <!-- Картка 1: Фотографія -->
           <article class="project-card" data-category="photography" data-project-id="0" tabindex="0" role="button" aria-label="Відкрити проєкт: Сонячний ліс">
             <div class="card-image-wrap">
               <img src="images/IMGP0049.JPG" alt="Сонячне проміння крізь зелені дерева в лісі" loading="lazy">
@@ -58,8 +51,6 @@
               <span class="card-more">Детальніше →</span>
             </div>
           </article>
-
-          <!-- Картка 2: Ілюстрація -->
           <article class="project-card" data-category="illustration" data-project-id="1" tabindex="0" role="button" aria-label="Відкрити проєкт: Кам'яні сходи">
             <div class="card-image-wrap">
               <img src="images/image_2026-03-23_23-29-48.png" alt="Ілюстрація старих кам'яних сходів серед осінньої природи" loading="lazy">
@@ -75,8 +66,6 @@
               <span class="card-more">Детальніше →</span>
             </div>
           </article>
-
-          <!-- Картка 3: Фотографія -->
           <article class="project-card" data-category="photography" data-project-id="2" tabindex="0" role="button" aria-label="Відкрити проєкт: Портрет на прогулянці">
             <div class="card-image-wrap">
               <img src="images/IMGP0059.JPG" alt="Портрет песика на траві в сонячний день" loading="lazy">
@@ -92,8 +81,7 @@
               <span class="card-more">Детальніше →</span>
             </div>
           </article>
-
-          <!-- Картка 4: Ілюстрація -->
+          
           <article class="project-card" data-category="illustration" data-project-id="3" tabindex="0" role="button" aria-label="Відкрити проєкт: Лісовий персонаж">
             <div class="card-image-wrap">
               <img src="images/hamstercute.png" alt="Дизайн милого персонажа-звірятка в теплих тонах" loading="lazy">
@@ -112,7 +100,7 @@
 
         </div>
 
-        <!-- Кнопки фільтрації знизу під проєктами -->
+        
         <div class="filter-controls" role="group" aria-label="Фільтр проєктів за типом">
           <button type="button" class="filter-btn active" data-filter="all">Усі роботи</button>
           <button type="button" class="filter-btn" data-filter="illustration">Ілюстрація</button>
@@ -121,7 +109,7 @@
       </section>
     </main>
 
-    <!-- Компактний футер з швидким копіюванням контакту -->
+    
     <footer class="site-footer">
       <p>© 2026 Anna Kolodach</p>
       <div class="footer-quick-actions">
@@ -133,7 +121,7 @@
     </footer>
   </div>
 
-  <!-- МОДАЛЬНЕ ВІКНО: Деталі проєкту -->
+  
   <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
     <div class="modal-window">
       <button type="button" class="modal-close" aria-label="Закрити вікно">&times;</button>
@@ -156,7 +144,7 @@
     </div>
   </div>
 
-  <!-- МОДАЛЬНЕ ВІКНО: Про мене та навички -->
+  
   <div class="modal-backdrop" id="about-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
     <div class="modal-window modal-window--compact">
       <button type="button" class="modal-close" aria-label="Закрити вікно">&times;</button>
@@ -177,7 +165,7 @@
     </div>
   </div>
 
-  <!-- МОДАЛЬНЕ ВІКНО: Контакти -->
+  
   <div class="modal-backdrop" id="contacts-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contacts-modal-title">
     <div class="modal-window modal-window--compact">
       <button type="button" class="modal-close" aria-label="Закрити вікно">&times;</button>

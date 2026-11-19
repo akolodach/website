@@ -1,4 +1,4 @@
-// Дані для розгорнутого опису кожного проєкту
+
 const projectsData = [
   {
     title: "Сонячний ліс",
@@ -35,7 +35,6 @@ const projectsData = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Фільтрація проєктів (Усі / Ілюстрація / Фотографія)
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card");
 
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 2. Модальне вікно проєкту
   const projectModal = document.getElementById("project-modal");
   const modalImg = document.getElementById("modal-project-img");
   const modalCategory = document.getElementById("modal-project-category");
@@ -92,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 3. Модальні вікна навігації (Contacts, About me)
   const navModalTriggers = document.querySelectorAll("[data-modal-target]");
   navModalTriggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
@@ -100,8 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (targetModal) openModal(targetModal);
     });
   });
-
-  // Загальні функції відкриття/закриття модалок
   function openModal(modal) {
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
@@ -130,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 4. Копіювання email в буфер обміну
   document.querySelectorAll(".copy-email-btn").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const email = btn.dataset.email;
