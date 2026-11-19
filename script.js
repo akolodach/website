@@ -5,31 +5,31 @@ const projectsData = [
     category: "Фотографія",
     image: "images/IMGP0049.JPG",
     description: "Завдання: зафіксувати гру ранкового сонячного проміння крізь крони дерев, зберігши природні відтінки зеленого та м'який контраст без перенасичення.",
-    tools: ["Adobe Lightroom", "Natural Light", "Кольорокорекція"],
+    tools: ["Adobe Photoshop", "Кольорокорекція"],
     
   },
   {
     title: "Кам'яні сходи",
     category: "Ілюстрація",
-    image: "images/image_2026-03-23_23-29-48.png",
+    image: "images/forest.png",
     description: "Завдання: створити ілюстрацію затишного кам'яного підйому в теплих охристих та коричневих тонах, передавши текстуру каменю та м'яку атмосферу казкового саду.",
-    tools: ["Procreate", "Digital Painting", "Текстурні пензлі"],
+    tools: ["Digital Art", "Текстурні пензлі"],
     
   },
   {
     title: "Портрет у парку",
     category: "Фотографія",
     image: "images/IMGP0059.JPG",
-    description: "Завдання: передати характер та живу увагу моделі на природному фоні з м'яким розмиттям заднього плану (боке) та акцентом на погляд.",
-    tools: ["Об'єктив 50mm", "Adobe Lightroom", "Портретна зйомка"],
+    description: "Завдання: Зробити фото мого песика як приклад для майбутніх фотозйомок домашніх улюбленців",
+    tools: ["Adobe Photoshop", "Портретна зйомка"],
     
   },
   {
     title: "Дизайн персонажа",
     category: "Ілюстрація",
     image: "images/hamstercute.png",
-    description: "Завдання: розробити доброзичливого персонажа-звірятка для дитячої ілюстрації з виразною мімікою, плавним лайн-артом і теплою палітрою.",
-    tools: ["Adobe Photoshop", "Character Design", "Лайн-арт"],
+    description: "Завдання: Створення милого персонажа хом'ячка для дитячих книжок. ",
+    tools: ["Adobe Photoshop", "Character Design"],
     
   }
 ];
@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalTitle = document.getElementById("modal-project-title");
   const modalDesc = document.getElementById("modal-project-desc");
   const modalTools = document.getElementById("modal-project-tools");
-  const modalLink = document.getElementById("modal-project-link");
 
   function openProjectModal(index) {
     const item = projectsData[index];
@@ -73,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     modalCategory.textContent = item.category;
     modalTitle.textContent = item.title;
     modalDesc.textContent = item.description;
-    modalLink.href = item.link;
 
     modalTools.innerHTML = item.tools.map((tool) => `<span>${tool}</span>`).join("");
     openModal(projectModal);
