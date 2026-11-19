@@ -6,7 +6,7 @@ const projectsData = [
     image: "images/IMGP0049.JPG",
     description: "Завдання: зафіксувати гру ранкового сонячного проміння крізь крони дерев, зберігши природні відтінки зеленого та м'який контраст без перенасичення.",
     tools: ["Adobe Lightroom", "Natural Light", "Кольорокорекція"],
-    link: "https://behance.net"
+    
   },
   {
     title: "Кам'яні сходи",
@@ -14,7 +14,7 @@ const projectsData = [
     image: "images/image_2026-03-23_23-29-48.png",
     description: "Завдання: створити ілюстрацію затишного кам'яного підйому в теплих охристих та коричневих тонах, передавши текстуру каменю та м'яку атмосферу казкового саду.",
     tools: ["Procreate", "Digital Painting", "Текстурні пензлі"],
-    link: "https://behance.net"
+    
   },
   {
     title: "Портрет у парку",
@@ -22,7 +22,7 @@ const projectsData = [
     image: "images/IMGP0059.JPG",
     description: "Завдання: передати характер та живу увагу моделі на природному фоні з м'яким розмиттям заднього плану (боке) та акцентом на погляд.",
     tools: ["Об'єктив 50mm", "Adobe Lightroom", "Портретна зйомка"],
-    link: "https://instagram.com"
+    
   },
   {
     title: "Дизайн персонажа",
@@ -30,7 +30,7 @@ const projectsData = [
     image: "images/hamstercute.png",
     description: "Завдання: розробити доброзичливого персонажа-звірятка для дитячої ілюстрації з виразною мімікою, плавним лайн-артом і теплою палітрою.",
     tools: ["Adobe Photoshop", "Character Design", "Лайн-арт"],
-    link: "https://behance.net"
+    
   }
 ];
 
