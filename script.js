@@ -31,6 +31,27 @@ const projectsData = [
     description: "Завдання: Створення милого персонажа хом'ячка для дитячих книжок. ",
     tools: ["Adobe Photoshop", "Character Design"],
     
+  },
+  {
+    title: "Подарункові листівки 2026",
+    category: "Ілюстрація",
+    images: [
+      {
+        src: "images/1f62edb6-5fd2-442c-871b-51cb4e30b736.png",
+        alt: "Листівка з конем, написом 2026 і новорічним побажанням"
+      },
+      {
+        src: "images/13121aaf-d52d-4363-928a-b9d32cf30252.png",
+        alt: "Листівка з конем і новорічним побажанням англійською"
+      },
+      {
+        src: "images/9dd8808c-30e0-45b4-b3c7-fb9eeea24f77.png",
+        alt: "Листівка з конем і побажанням сестрі англійською"
+      }
+    ],
+    description: "Серія авторських новорічних листівок до 2026 року: ілюстрації коней і теплі побажання для близьких.",
+    tools: ["Традиційний малюнок", "Лайн-арт", "Авторський летеринг"],
+
   }
 ];
 
@@ -57,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const projectModal = document.getElementById("project-modal");
-  const modalImg = document.getElementById("modal-project-img");
+  const modalImages = document.getElementById("modal-project-images");
   const modalCategory = document.getElementById("modal-project-category");
   const modalTitle = document.getElementById("modal-project-title");
   const modalDesc = document.getElementById("modal-project-desc");
@@ -67,8 +88,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const item = projectsData[index];
     if (!item) return;
 
-    modalImg.src = item.image;
-    modalImg.alt = item.title;
+    const images = item.images || [{ src: item.image, alt: item.title }];
+    const imageElements = images.map(({ src, alt }) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = alt;
+      return img;
+    });
+    modalImages.replaceChildren(...imageElements);
     modalCategory.textContent = item.category;
     modalTitle.textContent = item.title;
     modalDesc.textContent = item.description;
