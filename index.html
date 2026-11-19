@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna Kolodach — Портфоліо</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Навігація (точно як у Figma) -->
+    <header class="site-header">
+      <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><button type="button" class="nav-btn" data-modal-target="contacts-modal">Contacts</button></li>
+          <li><button type="button" class="nav-btn" data-modal-target="about-modal">About me</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero-банер на всю ширину екрана -->
+      <section class="hero-section" aria-label="Вітальний банер">
+        <div class="hero-banner">
+          <img src="images/Rectangle 72.png" alt="Авторський скетч з катером та ілюстраціями" class="hero-sketch-img" onerror="this.style.display='none'">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">ANNA<br>KOLODACH</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція проєктів -->
+      <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+
+        <!-- Сітка карток (4 в ряд на ПК) -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Картка 1: Фотографія -->
+          <article class="project-card" data-category="photography" data-project-id="0" tabindex="0" role="button" aria-label="Відкрити проєкт: Сонячний ліс">
+            <div class="card-image-wrap">
+              <img src="images/IMGP0049.JPG" alt="Сонячне проміння крізь зелені дерева в лісі" loading="lazy">
+              <span class="card-badge">Фотографія</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Сонячний ліс</h3>
+              <p class="card-task">Передати атмосферу ранкового світла та глибину лісової перспективи.</p>
+              <div class="card-tools">
+                <span>Lightroom</span>
+                <span>Natural Light</span>
+              </div>
+              <span class="card-more">Детальніше →</span>
+            </div>
+          </article>
+
+          <!-- Картка 2: Ілюстрація -->
+          <article class="project-card" data-category="illustration" data-project-id="1" tabindex="0" role="button" aria-label="Відкрити проєкт: Кам'яні сходи">
+            <div class="card-image-wrap">
+              <img src="images/image_2026-03-23_23-29-48.png" alt="Ілюстрація старих кам'яних сходів серед осінньої природи" loading="lazy">
+              <span class="card-badge">Ілюстрація</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Кам'яні сходи</h3>
+              <p class="card-task">Створити атмосферний концепт-арт затишного куточка з теплим світлом.</p>
+              <div class="card-tools">
+                <span>Digital Painting</span>
+                <span>Procreate</span>
+              </div>
+              <span class="card-more">Детальніше →</span>
+            </div>
+          </article>
+
+          <!-- Картка 3: Фотографія -->
+          <article class="project-card" data-category="photography" data-project-id="2" tabindex="0" role="button" aria-label="Відкрити проєкт: Портрет на прогулянці">
+            <div class="card-image-wrap">
+              <img src="images/IMGP0059.JPG" alt="Портрет песика на траві в сонячний день" loading="lazy">
+              <span class="card-badge">Фотографія</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Портрет у парку</h3>
+              <p class="card-task">Зловити живі емоції та природну динаміку під час ранкової прогулянки.</p>
+              <div class="card-tools">
+                <span>50mm Lens</span>
+                <span>Color Grading</span>
+              </div>
+              <span class="card-more">Детальніше →</span>
+            </div>
+          </article>
+
+          <!-- Картка 4: Ілюстрація -->
+          <article class="project-card" data-category="illustration" data-project-id="3" tabindex="0" role="button" aria-label="Відкрити проєкт: Лісовий персонаж">
+            <div class="card-image-wrap">
+              <img src="images/hamstercute.png" alt="Дизайн милого персонажа-звірятка в теплих тонах" loading="lazy">
+              <span class="card-badge">Ілюстрація</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Дизайн персонажа</h3>
+              <p class="card-task">Розробити харизматичного персонажа з м'яким контуром для книжкової серії.</p>
+              <div class="card-tools">
+                <span>Character Design</span>
+                <span>Photoshop</span>
+              </div>
+              <span class="card-more">Детальніше →</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Кнопки фільтрації знизу під проєктами -->
+        <div class="filter-controls" role="group" aria-label="Фільтр проєктів за типом">
+          <button type="button" class="filter-btn active" data-filter="all">Усі роботи</button>
+          <button type="button" class="filter-btn" data-filter="illustration">Ілюстрація</button>
+          <button type="button" class="filter-btn" data-filter="photography">Фотографія</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Компактний футер з швидким копіюванням контакту -->
+    <footer class="site-footer">
+      <p>© 2026 Anna Kolodach</p>
+      <div class="footer-quick-actions">
+        <button type="button" class="copy-email-btn" data-email="anna.kolodach@example.com">
+          Скопіювати Email
+        </button>
+        <span class="copy-status" aria-live="polite"></span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- МОДАЛЬНЕ ВІКНО: Деталі проєкту -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close" aria-label="Закрити вікно">&times;</button>
+      <div class="modal-project-layout">
+        <div class="modal-image-box">
+          <img id="modal-project-img" src="" alt="">
+        </div>
+        <div class="modal-info-box">
+          <span id="modal-project-category" class="modal-tag"></span>
+          <h3 id="modal-project-title" class="modal-title"></h3>
+          <p class="modal-label">Завдання та ідея:</p>
+          <p id="modal-project-desc" class="modal-text"></p>
+          <p class="modal-label">Використані інструменти:</p>
+          <div id="modal-project-tools" class="modal-tools-list"></div>
+          <a id="modal-project-link" href="#" target="_blank" rel="noopener noreferrer" class="primary-link-btn">
+            Переглянути оригінал ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- МОДАЛЬНЕ ВІКНО: Про мене та навички -->
+  <div class="modal-backdrop" id="about-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+    <div class="modal-window modal-window--compact">
+      <button type="button" class="modal-close" aria-label="Закрити вікно">&times;</button>
+      <h3 id="about-modal-title" class="modal-title">About me</h3>
+      <p class="modal-text">
+        Привіт! Я Анна Колодач — ілюстраторка та фотографка. Створюю затишні візуальні історії, працюю з дизайном персонажів, живою атмосферою в кадрі та естетичним візуальним контентом для брендів і творчих проєктів.
+      </p>
+      <p class="modal-label">Ключові навички та інструменти:</p>
+      <div class="modal-tools-list">
+        <span>Дизайн персонажів</span>
+        <span>Цифрова ілюстрація</span>
+        <span>Художня фотографія</span>
+        <span>Figma</span>
+        <span>Adobe Photoshop</span>
+        <span>Procreate</span>
+        <span>HTML / CSS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- МОДАЛЬНЕ ВІКНО: Контакти -->
+  <div class="modal-backdrop" id="contacts-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contacts-modal-title">
+    <div class="modal-window modal-window--compact">
+      <button type="button" class="modal-close" aria-label="Закрити вікно">&times;</button>
+      <h3 id="contacts-modal-title" class="modal-title">Contacts</h3>
+      <p class="modal-text">Відкрита до співпраці, замовлень на ілюстрації та творчих колаборацій:</p>
+      
+      <div class="contact-copy-box">
+        <span class="contact-email-text">anna.kolodach@example.com</span>
+        <button type="button" class="copy-email-btn" data-email="anna.kolodach@example.com">Копіювати</button>
+      </div>
+      <p class="copy-status modal-copy-status" aria-live="polite"></p>
+
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+        <a href="https://t.me" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
